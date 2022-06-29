@@ -1,10 +1,14 @@
 import { Box, HStack, Text, VStack } from "native-base";
 import { Feather } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
-const SideCard = () => {
+
+const Test = () => {
     return (
-        <Box width='80%' rounded='3xl' mb={2}>
-            <Box bg='#ebddf3' rounded='3xl' shadow={3} height='200' width='100%' >
+        <Box justifyContent='center' alignItems='center' width='95%' height='80%' bg='green.200'>
+            <Box bg='black' width='90%' height='35%' justifyContent='center' alignItems='flex-end' rounded='3xl' ml={8} >
+                <Box height='80%' width={1} bg='white' mr={1.5}></Box>
+            </Box>
+            <Box bg='violet.300' height='40%' width='90%' rounded='3xl' position='absolute'>
                 <VStack p={5} space='5'>
                     <HStack  >
                         <VStack>
@@ -30,12 +34,8 @@ const SideCard = () => {
                     </HStack>
                 </VStack>
             </Box>
-            <Box bg='black' rounded='3xl' height='170' width='100%' position='absolute' left={4} top='4'>
-                <Box bg='white' height='60%' width='1' ml='97%' mt={9}></Box>
-            </Box>
 
         </Box>
-
     )
 }
-export default SideCard;
+export default Test;
